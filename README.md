@@ -80,6 +80,8 @@ Create the target endpoint which represent the cluster documentDB.
 
 #### Create Database Migration
 
+Go in the AWS DMS and click on the button `Create task`.
+
 ![./documentation/22.png](./documentation/22.png)
 
 ![./documentation/24.png](./documentation/24.png)
@@ -90,12 +92,20 @@ Create the target endpoint which represent the cluster documentDB.
 
 ![./documentation/27.png](./documentation/27.png)
 
+The migration should now start. It might take a while.
+
 ![./documentation/28.png](./documentation/28.png)
+
+Once done, the status of the migration will change.
 
 ![./documentation/29.png](./documentation/29.png)
 
 #### Test
 
+Connect to the documentDB Cluster and check if the database contains all the data.
+
 ![./documentation/31.png](./documentation/31.png)
+
+Alternatively, you can check the result of the migration in DMS in the tab `table statistics`.
 
 ![./documentation/32.png](./documentation/32.png)
