@@ -1,6 +1,18 @@
 # LABORATORY-AWS-DMS
 
-This laboratory is an example of how I migrate a mongoDB database from EC2 to AWS DocumentDB.
+As I am working on my different aws certification. I am also testing how to use the different tool provided by **AWS**. This laboratory was created for testing how to migrate a database from a server to a documentDB using **DMS**, database migration service. I have documented with screen at each step how to do this. This is quite a long process but the result is perfect without any faulty copy.
+
+## Plan of the presentation
+
+I explain with all the details how I build the project and my way of working.
+
+- [Create a DocumentDB Cluster](#create-a-documentDB-cluster)
+- [Modification on EC2](#modification-on-ec2)
+- [Create a replicate instance](#create-a-replicate-instance)
+- [Create endpoints](#create-endpoints)
+- [Create Database Migration](#create-database-migration)
+- [Test](#test)
+- [System](#System)
 
 #### Create a DocumentDB Cluster
 
@@ -109,3 +121,16 @@ Connect to the documentDB Cluster and check if the database contains all the dat
 Alternatively, you can check the result of the migration in DMS in the tab `table statistics`.
 
 ![./documentation/32.png](./documentation/32.png)
+
+## System
+
+Ubuntu Version: Ubuntu 20.04.1 LTS
+Node Version: v16.17.3
+
+```bash
+# Get the version of node
+$ node -v
+
+# Get the latest version of ubuntu
+$ lsb_release -a
+```
